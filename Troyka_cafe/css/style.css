@@ -1,0 +1,150 @@
+ body { 
+	margin: 0;
+}
+@font-face {
+    font-family: Futura; 
+    src: url(fonts/futura1.ttf);
+}
+@font-face {
+    font-family: LCChalk; 
+    src: url(fonts/lcchalk.ttf);
+}
+ #bar_back_image {
+  margin: 0;
+  background: #000 center 0 repeat fixed;
+  height: 2800px;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0;
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+}
+#bar_menu {
+  background: #000 center 0 repeat fixed; 
+  border:1px solid white;
+  min-height: 1000px;
+  height: 100%;
+  top:330px;
+  margin-left: 5%;
+  width: 90%;
+  max-width: 1920px;
+  position: relative;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  z-index: 2;
+}
+#menu_name{
+  position: relative;
+  z-index: 2;
+  top:200 px;
+  }
+h1 {
+    color: #F5F5F5;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 50px;
+    font-family: Futura, sans-serif;
+}
+.bar_menu h2 {
+   	color: #FF6347;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: Futura, sans-serif;
+}
+.bar_menu hr{
+	border:0;
+	height:1px;
+	background:#333;
+	background-image: linear-gradient(to right,#ccc,#fff,#ccc);
+	margin:0;
+}
+.retro  h1{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 2;
+  position: relative;
+  top: 230px;
+  margin: 0 auto;
+  border: none;
+  font: thin 82px/normal "Futura", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  letter-spacing: 10px;
+  /*text-shadow: 4px 4px 0 rgb(238,238,238) , 6px 6px 0 rgb(80,80,80) ;*/
+}
+.drinks_table_name { 
+    width: 90%; 
+    border:none; 
+    border-collapse: collapse; 
+	margin-left: 60px;
+	table-layout: auto;
+	
+}
+.drinks_table_name th { 
+    border:none;
+	text-align: center; 
+    background: #ccc; 
+    padding: 5px; 
+    border: 1px solid #FFF5EE; 
+}
+.drinks_table_name td { 
+    border:none;
+	text-align: left;
+	font-family: Futura, sans-serif;
+	font-size: 20px;
+	color:#fff;
+	
+}
+.business_table_name { 
+    width: 100%; 
+    border:none; 
+    border-collapse: collapse; 
+	margin-left: 5px;
+	table-layout: auto;
+	
+}
+.business_table_name td { 
+    border:none;
+	text-align: left;
+	font-family: Futura, sans-serif;
+	font-size: 20px;
+	color:#fff;
+}
+.chief_menu{
+margin-top:20px;
+margin-bottom:10px;
+
+}
+
+.chief_menu h2{
+	margin-top:0px;
+	color: #FFFFFF;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: LCChalk, sans-serif;
+}
+.chief_menu h3{
+	margin-top:15px;
+	color: #FFFFFF;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: LCChalk, sans-serif;
+}
+.chief_menu hr{
+	margin: auto;
+	width:85%;
+	border:0;
+	height:1px;
+	background:#333;
+	background-image: linear-gradient(to right,#ccc,#fff,#ccc);
+	
+}
+   

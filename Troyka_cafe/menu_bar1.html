@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Кафе Трио</title>
+ <script src="js/jquery-3.1.0.min.js"></script>
+ <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <link href="css/style.css" rel="stylesheet" type="text/css" />
+ <link href="css/hint.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+  <div id="bar_back_image"></div>
+  <div class="retro"><h1>Бар</h1></div>
+  <div id="bar_menu" class="bar_menu">
+	<div id="menu_bar_sver" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4">
+				<h2 align="center">Коньяк</h2>
+				<p align="center"><img src="images/coniac.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Виски</h2>
+				<p align="center"><img src="images/viski.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Ликеры</h2>
+				<p align="center"><img src="images/liquior.jpg" alt="None"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 align="center">Вина</h2>
+				<p align="center"><img src="images/vine.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Водка</h2>
+				<p align="center"><img src="images/vodka.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Ром</h2>
+				<p align="center"><img src="images/rom.jpg" alt="None"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 align="center">Текила</h2>
+				<p align="center"><img src="images/tequila.png" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Бренди</h2>
+				<p align="center"><img src="images/brendi.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Коктейли</h2>
+				<p align="center"><img src="images/cocktail.jpg" alt="None"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 align="center">Кофе</h2>
+				<p align="center"><img src="images/cofee.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Чай</h2>
+				<p align="center"><img src="images/tea.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Глинтвейны</h2>
+				<p align="center"><img src="images/glint.jpg" alt="None"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 align="center">Лимонады</h2>
+				<p align="center"><img src="images/lemonade.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Безалкогольные коктейли</h2>
+				<p align="center"><img src="images/bezalko.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4">
+				<h2 align="center">Молочные коктейли</h2>
+				<p align="center"><img src="images/milk.jpg" alt="None"></p>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<h2 align="center">Соки</h2>
+				<p align="center"><img src="images/juice.jpg" alt="None"></p>
+			</div>
+		</div>
+	</div>
+</div> 
+
+
+<script>
+ $(document).ready(function(){
+    $('.spoiler_title').click(function(){
+
+        var spoiler = $(this).next().next();
+		var buttonplus = $(this).find('td').next().find('img').eq(1);
+		var buttonminus= $(this).find('td').next().find('img').eq(0);
+
+        if(spoiler.hasClass('spoiler_block') && spoiler.is(':visible')) {
+            spoiler.animate({padding: '0px auto'}).find('div').slideUp(300,function(){spoiler.hide()});
+			buttonminus.css('display','none');
+			buttonplus.css('display','block');
+			
+        }else{
+           spoiler.show().find('td').animate({padding: '8px auto'}).find('div').slideDown(300);
+		   buttonminus.css('display','block');
+		   buttonplus.css('display','none');
+        }
+    });
+});
+</script>
+
+
+<style>
+
+.spoiler_title {
+	cursor: pointer;
+}
+.spoiler_block, .spoiler_block div{
+	overflow:hidden;
+}
+.spoiler_block td {padding: 0px auto !important;}
+
+.buttonplus{
+margin: 5px 5px -25px 5px;
+height:25px;
+width:25px;
+border-radius: 25px; 
+display:none;
+}
+
+.buttonminus{
+margin: 5px 5px -25px 5px;
+height:25px;
+width:25px;
+border-radius: 25px; 
+}
+
+</style>
+
+</body>
+</html>

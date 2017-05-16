@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Бар</title>
+ <script src="js/jquery-3.1.0.min.js"></script>
+ <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+ <link href="css/style.css" rel="stylesheet" type="text/css" />
+ <link href="css/hint.css" rel="stylesheet" type="text/css" />
+ </head>
+ <body>
+  <div id="bar_back_image"></div>
+  <div class="retro"><h1>Бар</h1></div>
+  <div id="bar_menu" class="bar_menu">
+	<div id="menu_bar_sver" class="container-fluid">
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1" style='border:none'>
+				<h2 align="center">Коньяк</h2>
+				<p align="center"><img src="css/images/coniac.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2" style='border:none'>
+				<h2 align="center">Виски</h2>
+				<p align="center"><img src="css/images/viski.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3" style='border:none'>
+				<h2 align="center">Ликеры</h2>
+				<p align="center"><img src="css/images/liquior.jpg" alt="None"></p>
+			</div>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block1">
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Хеннесси VSOP 50 мл</td><td style='width: 5%'>620</td></tr>
+				<tr><td style='padding-left:2%'>Реми Мартини VSOP 50 мл</td><td>590</td></tr>
+				<tr><td style='padding-left:2%'>Мартель VS 50 мл</td><td>470</td></tr>
+		</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block2">
+			<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Маккалан Файн (12 лет)</td><td style='width: 5%'>580</td><td style='padding-left:4%'>Джемесон</td><td style='width: 5%'>340</td></tr>
+				<tr><td style='padding-left:2%'>Чивас Ригал (12 лет)</td><td>480</td><td style='padding-left:4%'>Джек Дэниэлс</td><td>430</td></tr>
+				<tr><td style='padding-left:2%'>Чивас Ригал (18 лет)</td><td>550</td></tr>
+			</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block3">
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Бейлиз</td><td style='width: 5%'>310</td><td style='padding-left:4%'>Куантро</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%'>Амаретто</td><td>310</td><td style='padding-left:4%'>Калуа</td><td>310</td></tr>
+				<tr><td style='padding-left:2%'>Галлиано</td><td>310</td><td style='padding-left:4%'>Малибу</td><td>310</td></tr>
+				<tr><td style='padding-left:2%'>Самбука</td><td>310</td></tr>
+			</table>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1" style='border:none'>
+				<h2 align="center">Вина</h2>
+				<p align="center"><img src="css/images/vine.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2" style='border:none'>
+				<h2 align="center">Водка</h2>
+				<p align="center"><img src="css/images/vodka.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3" style='border:none'>
+				<h2 align="center">Ром</h2>
+				<p align="center"><img src="css/images/rom.jpg" alt="None"></p>
+			</div>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block1" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Вина Франции 150мл</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Шабли Савари</td><td style='width: 5%'>480</td><td style='padding-left:4%'>Медок Шато Лебоск 1 бут.</td><td style='width: 5%'>2750</td></tr>
+				<tr><td style='padding-left:2%'>Розе д*Анжу</td><td>390</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Вина Италии 150мл</h3></td></tr>
+				<tr><td style='padding-left:2%'>*Гави ди Гави</td><td>410</td><td style='padding-left:4%'>Пино Гриджо</td><td>380</td></tr>
+				<tr><td style='padding-left:2%'>*Кьянти Монтальбано</td><td>420</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Вина Испании 150мл</h3></td></tr>
+				<tr><td style='padding-left:2%'>*Риоха Монте Лиано</td><td>330</td><td style='padding-left:4%'>*Риоха Монте Лиано</td><td>330</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Вина Чили 150мл</h3></td></tr>
+				<tr><td style='padding-left:2%'>*Исла Негра</td><td>290</td><td style='padding-left:4%'>*Исла Негра</td><td>290</td></tr>
+				<tr><td style='padding-left:2%'>*Мартини 100мл</td><td>320</td><td style='padding-left:4%'>*Мартини Бьянко</td><td>320</td></tr>
+				<tr><td style='padding-left:2%'>*Мартини Россо</td><td>320</td><td style='padding-left:4%'>*Мартини Драй</td><td>320</td></tr>
+				<tr><td style='padding-left:2%'>*Кампари 50мл</td><td>320</td></tr>
+			</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block2">
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Водка "Белое золото Премиум" 50 мл</td><td style='width: 5%'>190</td></tr>
+		</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block3">
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Баккарди Бланка</td><td style='width: 5%'>280</td></tr>
+				<tr><td style='padding-left:2%'>Бакарди Блэк</td><td>280</td></tr>
+		</table>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1" style='border:none'>
+				<h2 align="center">Текила</h2>
+				<p align="center"><img src="css/images/tequila.png" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2" style='border:none'>
+				<h2 align="center">Бренди</h2>
+				<p align="center"><img src="css/images/brendi.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3" style='border:none'>
+				<h2 align="center">Коктейли</h2>
+				<p align="center"><img src="css/images/cocktail.jpg" alt="None"></p>
+			</div>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block1" >
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Олмека серебряная</td><td style='width: 5%'>350</td></tr>
+				<tr><td style='padding-left:2%'>Олмека золотая</td><td>350</td></tr>
+		</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block2" >
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Грейт Арарат 5 звезд</td><td style='width: 5%'>320</td></tr>
+		</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block3" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+			<!-- -->	
+			
+				<tr><td style='padding-left:2%;width: 45%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(ром, сок лимонный, мята)">"Мохито"</span></td>
+					<td style='width: 5%'>420</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(ром,сироп Клубника,лим. сок,Куантро)">"Дайкири" клубничный</span></td>
+					<td style='width: 5%'>430</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Калуа, Бейлиз, Куантро)">"B-52"</span></td>
+					<td>370</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(ром,Куантро,сироп Сахарный,лед)">"Дайкири" классический</span></td>
+					<td>310</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Текила,сок апелисьновый,Гренадин)">"Текила Санрайз"</span></td>
+					<td>390</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Калуа, Бейлиз, Куантро)">"Пина Колада"</span></td>
+					<td>310</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Кампари, апельсиновый сок)">"Кампари оранж"</span></td>
+					<td>330</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Мартини, апельсиновый сок)">"Мартини оранж"</span></td>
+					<td>330</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Джин, Тоник, лимон)">"Джин тоник"</span></td>
+					<td>370</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Джин,водка,Куантро,Текила,Ром,Гренадин,кола)">"Лонг Айленд"</span></td>
+					<td>490</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Виски,кола)">"Виски-кола"</span></td>
+					<td>380</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Ром,кола)">"Ром-кола"</span></td>
+					<td>370</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Водка,Куантро,сок)">"Космополитен"</span></td>
+					<td>330</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Виски,лайм,сок)">"Виски-сауэр"</span></td>
+					<td>390</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Текила,Куантро,лимонный сок,колотый лед)">"Маргарита"</span></td>
+					<td>410</td>
+					<td style='padding-left:4%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Текила,Клубника,Куантро,Сауэр)">"Маргарита" клубничная</span></td>
+					<td>430</td>
+				</tr>
+				<tr><td style='padding-left:2%'><span class="hint  hint--right  hint--bounce hint--large" 
+						data-hint="(Амаретто,апел. сок,шамп. сухое)">"Амаретто флирт"</span></td>
+					<td>310</td>
+				
+			<!-- -->
+			</table>			
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1" style='border:none'>
+				<h2 align="center">Кофе</h2>
+				<p align="center"><img src="css/images/cofee.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2" style='border:none'>
+				<h2 align="center">Чай</h2>
+				<p align="center"><img src="css/images/tea.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3" style='border:none'>
+				<h2 align="center">Глинтвейны</h2>
+				<p align="center"><img src="css/images/glint.jpg" alt="None"></p>
+			</div>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block1" >
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Эспрессо</h3></td><td style='width: 5%'><h3>Сингл</h3></td><td style='width: 4%'><h3>Дабл</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Классический 50/100</td><td style='width: 5%'>135</td><td style='width: 5%'>180</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Ристретто 25</td><td style='width: 5%'>135</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кон Панно 80/145</td><td style='width: 5%'>135</td><td style='width: 5%'>180</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Эспрессо без кофеина 60/120</td><td style='width: 5%'>190</td><td style='width: 5%'>230</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Капучино</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Классический</td><td style='width: 5%'>210</td><td style='width: 5%'>240</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>"Немецкий шоколад"</td><td style='width: 5%'>210</td><td style='width: 5%'>240</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>"Пино Колада"</td><td style='width: 5%'>210</td><td style='width: 5%'>240</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Капучино "Черный лес"</td><td style='width: 5%'>210</td><td style='width: 5%'>240</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Капучино без кофеина</td><td style='width: 5%'>230</td><td style='width: 5%'>260</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Кофе Мокко</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Классический 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>С карамелью 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Латте</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Макиато 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>"Немецкий шоколад" 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>"Карамель" 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Глясе</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Классический 200</td><td style='width: 5%'>260</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Шоколадный 200</td><td style='width: 5%'>220</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Кофе по-восточному</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>"Пять звезд"</td><td style='width: 5%'>220</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>С шоколадом</td><td style='width: 5%'>220</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кофе американо</td><td style='width: 5%'>220</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Ирландский кофе 200</td><td style='width: 5%'>310</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кофе "Бейлиз" 200</td><td style='width: 5%'>310</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кофе с коньяком и лимоном 200</td><td style='width: 5%'>250</td><td style='width: 5%'>290</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кофе с горячим молоком 200</td><td style='width: 5%'>170</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Молоко, Сливки 80</td><td style='width: 5%'>60</td><td style='width: 5%'></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Мед 30</td><td style='width: 5%'>80</td><td style='width: 5%'></td></tr>				
+			</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block2" >
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Черный чай, 400/600</h3></td><td style='width: 5%'><h3>400</h3></td><td style='width: 4%'><h3>600</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Ассам-плантация "Дуумур Дулонг"(Индия)</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Эрл Грей</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Даржилинг Путтабонг</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Зеленый чай,400/600</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сенча (Япония)</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Жасминовый</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Молочный Улун</td><td style='width: 5%'>270</td><td style='width: 5%'>330</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Травяной чай, 400/600</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Смесь пастушки</td><td style='width: 5%'>250</td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Чай френчпресс, 600</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Чай имбирный</td><td style='width: 5%'></td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Чай облепиха</td><td style='width: 5%'></td><td style='width: 5%'>310</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Чай липовый с листьями брусники, лимоном и медом</td><td style='width: 5%'></td><td style='width: 5%'>330</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Чай клюква</td><td style='width: 5%'></td><td style='width: 5%'>310</td></tr>
+			</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block3" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Глинтвейн классический</td><td style='width: 5%'>270</td>
+				<td style='padding-left:4%'>Ягодный</td><td style='width: 5%'>280</td></tr>
+				<tr><td style='padding-left:2%'>Фруктовый</td><td>280</td>
+				<td style='padding-left:4%'>Грог</td><td style='width: 5%'>270</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Безалкогольные глинтвейны</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Глинтвейн</td><td style='width: 5%'>230</td>
+				<td style='padding-left:4%'>Со свежими фруктами</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%'>С ягодами</td><td>280</td>
+				</tr>
+		</table>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1">
+				<h2 align="center">Лимонады</h2>
+				<p align="center"><img src="css/images/lemonade.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2">
+				<h2 align="center">Безалкогольные коктейли</h2>
+				<p align="center"><img src="css/images/bezalko.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3">
+				<h2 align="center">Молочные коктейли</h2>
+				<p align="center"><img src="css/images/milk.jpg" alt="None"></p>
+		</div>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block1" >
+		
+			<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+			<tr><td style='padding-left:2%;width: 45%;'>Лимонад 1/300</td><td style='width: 5%'>180</td>
+				<td style='padding-left:4%'>Лимонад 1л.</td><td style='width: 5%'>295</td></tr>
+			<tr><td style='padding-left:2%;width: 45%;'>Тропический 1л.</td><td style='width: 5%'>350</td>
+				<td style='padding-left:4%'>Малиновый 1л.</td><td style='width: 5%'>350</td></tr>
+			<tr><td style='padding-left:2%;width: 45%;'>Имбирный 1л.</td><td style='width: 5%'>350</td>
+				<td style='padding-left:4%'>Дюшес 1л.</td><td style='width: 5%'>350</td></tr>
+			</table>
+		</div>
+		
+		
+		<div class="row spoiler_block" id="spoiler_block2" >
+		
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+			<tr><td style='padding-left:2%;width: 45%;'>"Пина Колада"</td><td style='width: 5%'>270</td>
+				<td style='padding-left:4%'>"Мохито"</td><td style='width: 5%'>270</td></tr>
+			<tr><td style='padding-left:2%;width: 45%;'>"Мохито Клубничный"</td><td style='width: 5%'>290</td>
+				<td style='padding-left:4%'>Айс Ти</td><td style='width: 5%'>170</td></tr>
+		</table>
+		</div>
+		
+		<div class="row spoiler_block" id="spoiler_block3" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+			<tr><td style='padding-left:2%;width: 45%;'>"Клубничный"</td><td style='width: 5%'>240</td>
+				<td style='padding-left:4%'>"Банановый"</td><td style='width: 5%'>240</td></tr>
+			<tr><td style='padding-left:2%;width: 45%;'>"Шоколадный"</td><td style='width: 5%'>240</td>
+				<td style='padding-left:4%'>"Ванильный"</td><td style='width: 5%'>240</td></tr>
+		</table>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 spoiler_title" id="spoiler_title1" style='border:none'>
+				<h2 align="center">Шампанское</h2>
+				<p align="center"><img src="images/shampan.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title2" style='border:none'>
+				<h2 align="center">Пиво</h2>
+				<p align="center"><img src="images/beer.jpg" alt="None"></p>
+			</div>
+			<div class="col-md-4 spoiler_title" id="spoiler_title3" style='border:none'>
+				<h2 align="center">Соки</h2>
+				<p align="center"><img src="images/juice.jpg" alt="None"></p>
+			</div>
+		</div>
+		<div class="row spoiler_block" id="spoiler_block1" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Просеко ТОСО белое, брют</td><td style='width: 5%'>1800</td><td style='padding-left:4%'>Советское п/сладкое бутылка 750мл</td><td style='width: 5%'>690</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Советское брют бутылка 750мл</td><td style='width: 5%'>690</td><td style='padding-left:4%'>Советское бокал 150мл</td><td style='width: 5%'>180</td></tr>
+		</table>
+		</div>
+		<div class="row spoiler_block" id="spoiler_block2" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'>Magners Irish Cider 0,3</td><td style='width: 5%'>260</td><td style='padding-left:4%'>Clausthaler 0,33 безалкогольное</td><td style='width: 5%'>270</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок ананасовый</td><td style='width: 5%'>130</td><td style='padding-left:4%'>Сок яблочный</td><td style='width: 5%'>130</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Пиво разливное светлое</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Старопрамен 0,5</td><td style='width: 5%'>260</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Старопрамен 0,3</td><td style='width: 5%'>200</td></tr>
+				
+			</table>
+		</div>
+		<div class="row spoiler_block" id="spoiler_block3" >
+		<table class="drinks_table_name table-condensed" style='margin-left:25px;margin-right:0px;width:98%'>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Соки натуральные 250</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок апельсиновый</td><td style='width: 5%'>130</td><td style='padding-left:4%'>Сок томатный</td><td style='width: 5%'>130</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок ананасовый</td><td style='width: 5%'>130</td><td style='padding-left:4%'>Сок яблочный</td><td style='width: 5%'>130</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок вишневый</td><td style='width: 5%'>130</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Морс черничный 250</td><td style='width: 5%'>190</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Морс клюквенный 250</td><td style='width: 5%'>190</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Соки "Фреш" (свежевыжатые) 250</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок апельсиновый</td><td style='width: 5%'>250</td><td style='padding-left:4%'>Сок грейпфрутовый</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок яблочный</td><td style='width: 5%'>250</td><td style='padding-left:4%'>Сок яблочный со сливками</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок морковный</td><td style='width: 5%'>250</td><td style='padding-left:4%'>Сок морковный со сливками</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Сок ананасовый</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Миксы "Фреш" 250</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Апельсин, грейпфрут</td><td style='width: 5%'>250</td><td style='padding-left:4%'>Яблоко, морковь, сливки</td><td style='width: 5%'>250</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Ананас, морковь</td><td style='width: 5%'>250</td><td style='padding-left:4%'>Яблоко, ананас</td><td style='width: 5%'>300</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Ананас, цитрус</td><td style='width: 5%'>300</td></tr>
+				<tr><td></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Кока-кола 0,25</td><td style='width: 5%'>170</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Спрайт 0,25</td><td style='width: 5%'>170</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Тоник 0,25</td><td style='width: 5%'>170</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'><h3>Минеральная вода 0,33</h3></td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Эвиан</td><td style='width: 5%'>210</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Перье</td><td style='width: 5%'>210</td></tr>
+				<tr><td style='padding-left:2%;width: 45%;'>Нарзан</td><td style='width: 5%'>195</td></tr>
+			</table>
+		</div>
+
+	</div>
+</div> 
+
+
+<script>
+ $(document).ready(function(){
+    $('.spoiler_title').click(function(){
+	
+	var id_click =   this.id;
+	var spoiler1=$(this).parent().next();
+	var spoiler2=$(this).parent().next().next();
+	var spoiler3=$(this).parent().next().next().next();
+3
+    if(id_click=="spoiler_title1"){
+	if(spoiler2.is(':visible')) spoiler2.toggle('normal');
+	if(spoiler3.is(':visible')) spoiler3.toggle('normal');
+	spoiler1.toggle('normal');
+	}
+	else if(id_click=="spoiler_title2"){
+	if(spoiler1.is(':visible')) spoiler1.toggle('normal');
+	if(spoiler3.is(':visible')) spoiler3.toggle('normal');
+	spoiler2.toggle('normal');
+	}
+	else if(id_click=="spoiler_title3"){
+	if(spoiler1.is(':visible')) spoiler1.toggle('normal');
+	if(spoiler2.is(':visible')) spoiler2.toggle('normal');
+	spoiler3.toggle('normal');
+	}
+	
+    });
+});
+</script>
+
+
+<style>
+
+.spoiler_title {
+	cursor: pointer;
+}
+.spoiler_block, .spoiler_block{
+	display: none;
+	overflow:hidden;
+	color:white;
+	width: 100%;
+}
+.spoiler_block td {padding: 0px auto !important;}
+.spoiler_title:hover > h2{ 
+color:#EE0000; 
+}
+
+</style>
+
+</body>
+</html>
